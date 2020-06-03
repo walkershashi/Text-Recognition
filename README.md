@@ -1,5 +1,4 @@
-# Text-Recognition
-Using OpenCV and Tesseract OCR to process a text image to detect the words in the image
+# Text-Recognition Using OpenCV and Tesseract OCR
 
 Computer don't have the ability to process the videos and images on their own like humans. We can interpret any kind of images to a large extent but the machines lack this ability.
 
@@ -14,7 +13,19 @@ Field of Use:
 
 OpenCV is an open source computer vision library for image processing, Machine Learning. It is a cross platform library.Some of its use cases are:
 <ul>
-  <li>It includes interfaces for c, C++, Java, and Python</li>
+  <li>It includes interfaces for C, C++, Java, and Python</li>
   <li>It is used to process static images</li>
   <li>It is also used to process offline videos and/or streaming videos</li>
 </ul>
+
+Tesseract OCR is an optical character recognition engine, which has the ability to recognize words and text files.
+
+In this project I have used <code>OpenCV</code> and <code>Tesseract OCR</code> to process a text image to detect the words in the image.<br>
+The project work includes 
+<li>Importing an Image from the local computer, or </li> 
+<li>Downloading an Image over the Internet using <code>urllib.request</code> module</li>
+
+When the image is loaded it is read using <code>imread()</code> function from the <code>cv2</code> module.
+The image  read by the imread function is by default in <code>BGR</code> format and needs to be converted to <code>Gray</code> scale image before processing for better text recognition.
+After the image is converted into the desired scale of colors it is resized and then using the <code>Gaussian Blur</code> technique it is formatted.
+After formatting of the image, the image is then passed through the <code>Tesseract OCR</code> to return a string which is then processed to return the final text contained in the image.
