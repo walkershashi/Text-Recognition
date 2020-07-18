@@ -29,3 +29,24 @@ When the image is loaded it is read using <code>imread()</code> function from th
 The image  read by the imread function is by default in <code>BGR</code> format and needs to be converted to <code>Gray</code> scale image before processing for better text recognition.
 After the image is converted into the desired scale of colors it is resized and then using the <code>Gaussian Blur</code> technique it is formatted.
 After formatting of the image, the image is then passed through the <code>Tesseract OCR</code> to return a string which is then processed to return the final text contained in the image.
+
+## Visual Represenation 
+![](sucess.jpg)</br> 
+<code><b><i>I NEVER DREAMED ABOUT SUCCESS. I WORKED FOR IT</i><b></code>
+</br></br>
+
+![](Poem.png)</br>
+<code>
+<b><i>
+My love said she would marry only me  
+And Jove himself could not make her care. 
+For what women say to lovers, you'll agree 
+lone writes on running water or on air.  
+
+Sin of self-love possesseth all mine eye 
+And all my soul and all my every part;  
+land for this sin there is no remedy,  
+It is so grounded inward in my heart.
+</i><b>
+</code>
+</br>
